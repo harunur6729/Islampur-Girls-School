@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGS</title>
+    <!--external css file-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="container-fluid bg-info  header">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-sm-4  col-logo">
+              <img class="img-fluid logo" src="assets/images/Logo.jpg" alt="logo image">
+    
+            </div>
+    
+            <div class="col-sm-8 logo-head-col">
+              <h1 class="logo-head ">ইসলামপুর বালিকা উচ্চ বিদ্যালয়<br>EIIN NO:124532</h1>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+
+    <!--Navbar-->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-theme">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <!--<span class="navbar-toggler-icon"></span>--> 
+         <i class="fa-solid fa-bars text-dark"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">হোম <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    আমাদরে ‍সম্পর্কে
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="aboutSchool.html">প্রতিষ্ঠান সম্পর্কে</a>
+                  <a class="dropdown-item" href="speechOfHead.html">প্রতিষ্ঠান প্রধানের বাণী</a>
+                </div>
+              </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    একাডেমিক
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="syllabus.html">সিলেবাস</a>
+                  <a class="dropdown-item" href="classRoutine.html">ক্লাস রুটিন</a>
+                  <a class="dropdown-item" href="examRoutine.html">পরীক্ষা রুটিন</a>
+                  <a class="dropdown-item" href="result.html">রেজাল্ট</a>
+                  <a class="dropdown-item" href="academicCalendar.html">একাডেমিক ক্যালেন্ডার</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teacher.html">শিক্ষক ও কর্মচারী</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photoGallery.html">ফটো গ্যালারী</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="notice.html">নোটিশ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">যোগাযোগ </a>
+              </li>
+            
+          </ul>
+        
+        </div>
+      </nav>
+
+
+      <div class="width-100">
+        <div class="teacher-list">
+            <h2>বিদ্যালয়ের শিক্ষক/কর্মচারীর তালিকা </h2>
+
+            <table border="1px">
+                <tr>
+                    <th>ক্রমিক নং</th>
+                    <th>শিক্ষক/কর্মচারীর নাম,পদবী,বিষয়,ইনডেক্স নম্বর ও জন্ম তারিখ</th>
+                    <th>শিক্ষাগত যোগ্যতা বিবরণ বিভাগ ও সন সহ</th>
+                    <th>বর্তমান প্রতিষ্ঠানে যোগদানের তারিখ</th>
+                    <th>পূর্ববতী প্রতিষ্ঠানে যোগদানের তারিখ</th>
+                    <th>বর্তমান প্রতিষ্ঠানে এমপিও ভূক্তির তারিখ</th>
+                    <th>পূর্ববতী প্রতিষ্ঠানে এমপিও ভূক্তির তারিখ(যদি থাকে)</th>
+                
+                </tr>
+                <tr>
+                    <td>০১</td>
+                    <td>নামঃ মোঃ তামিজ উদ্দীন<br>পদবীঃ প্রধান শিক্ষক<br>ইনডেক্সঃ ২৫৮১৫৭<br>জন্ম তারিখঃ ০৮.০৪.৬৯</td>
+                    <td>এসএসসি -২য়-১৯৮৪<br>এইচএসসি -২য়-১৯৮৭<br>স্নাতক(পাশ/সম্মান)-২য়-১৯৯৩<br>বিএড ২য়-১৯৯৯</td>
+                    <td>২৩.০২.২০১০</td>
+                    <td>০১.০১.১৯৯৫</td>
+                    <td>২৩.০২.২০১০</td>
+                    <td>০১.০২.১৯৯৫</td>
+                </tr>
+                <tr>
+                    <td>০২</td>
+                    <td>নামঃ মোঃ ফিরোজ কবির<br>
+                        পদবীঃ সহকারী প্রধান শিক্ষক<br>
+                        ইনডেক্সঃ ৫৬৩৯২০<br>
+                        জন্ম তারিখঃ ৩০.০৬.৭২
+                        </td>
+                    <td>এসএসসি -২য়-১৯৮৯<br>
+                        এইচএসসি -২য়-১৯৯২<br>
+                        স্নাতক (পাশ/সম্মান)-৩য়-১৯৯৩<br>
+                        বিএড ২য়- ২০০৩
+                        </td>
+                    <td>০১.০৯.১৯৯৭</td>
+                    <td></td>
+                    <td>০১.০৫.২০০২</td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <td>০৩</td>
+                    <td>নামঃ মোঃ সুলতানুল ইসলাম<br>
+                        পদবীঃ  সহকারী শিক্ষক (গণিত) <br>
+                        ইনডেক্সঃ ৫৬৩৯২<br>
+                        জন্ম তারিখঃ ১০.০৭.৭৭
+                        </td>
+                    <td>এসএসসি -২য়-১৯৯২<br>
+                        এইচএসসি -১ম-১৯৯৫<br>
+                        স্নাতক (পাশ/সম্মান)-২য়-১৯৯৮<br>
+                        স্নাতকোত্তর- ৩.৪৫- ২০১৭<br>
+                        বিএড ২য়- ২০০৪
+                        </td>
+                    <td>০১.০৯.১৯৯৭</td>
+                    <td></td>
+                    <td>০১.০৫.২০০২</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>০৪</td>
+                    <td>নামঃ মোস্তাফিজুর রহমান<br>
+                        পদবীঃ সহকারী শিক্ষক (বাংলা) <br>
+                        ইনডেক্সঃ ১০৭৯৬৫২<br>
+                        জন্ম তারিখঃ ০৫.০১.৮৭
+                        </td>
+                    <td>দাখিল -৩.৬৭-২০০১<br>
+                        আলিম -৩.০০-২০০৪<br>
+                        স্নাতক (পাশ/সম্মান)-৩য়-২০০৯<br>
+                        বিএড ১ম- ২০১৬<br>
+                        এমএড-২.৪১ - ২০১৯
+                        </td>
+                    <td>১৫.০৯.২০১৩</td>
+                    <td></td>
+                    <td>০১.১১.২০১৩</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>০৫</td>
+                    <td>নামঃ মোঃ নুরুল ইসলাম<br>
+                        পদবীঃ সহকারী শিক্ষক (ইংরেজী) <br>
+                        ইনডেক্সঃ ১১২৬৩৭৩<br>
+                        জন্ম তারিখঃ ১৩.০১.৮৮
+                        </td>
+                    <td>দাখিল -৩.০৮-২০০৪<br>
+                        এইচএসসি -২.৯০-২০০৬<br>
+                        স্নাতক (পাশ/সম্মান)-৩য়-২০১০<br>
+                        স্নাতকোত্তর- ২য়- ২০১১<br>
+                        বিএড ৩.১৩/২০১৭
+                        </td>
+                    <td>২৪.১১.২০১৫</td>
+                    <td></td>
+                    <td>০১.০১.২০১৬</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>০৬</td>
+                    <td>নামঃ মোসাঃ মাসুমা আখতার<br>
+                        পদবীঃ সহকারী শিক্ষক (সমাজ বিজ্ঞান)  <br>
+                        ইনডেক্সঃ ১০৬৯০০১<br>
+                        জন্ম তারিখঃ ২৫.১১.৮৩
+                        </td>
+                    <td>এসএসসি -২য়-২০০০<br>
+                        এইচএসসি -২.০০-২০০৩<br>
+                        স্নাতক (পাশ/সম্মান)-২য়-২০০৭
+                        বিএড ২য় - ২০১৩
+                        </td>
+                    <td>৩১.০৫.২০১২</td>
+                    <td></td>
+                    <td>০১.১১.২০১২</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>০৭</td>
+                    <td>নামঃ মোঃ মাসুম রেজা<br>
+                        পদবীঃ সহকারী শিক্ষক (ইসলাম ধর্ম) <br>
+                        ইনডেক্সঃ ১০৬১৪৮৩<br>
+                        জন্ম তারিখঃ ২৫.১২.৮৭
+                        </td>
+                    <td>দাখিল -৩.০০-২০০২<br>
+                        আলিম -৩.০০-২০০৪ <br>
+                        ফাজিল-১ম-২০০৬<br>
+                        কামিল -৩.৮৫-২০০৮
+                        </td>
+                    <td>১১.০৬.২০১১</td>
+                    <td></td>
+                    <td>০১.১১.২০১২</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>০৮</td>
+                    <td>নামঃ মোঃ মাহবুব আলম<br>
+                        পদবীঃ সহকারী শিক্ষক (শরীর চর্চা) <br>
+                        ইনডেক্সঃ ১১১২০০১<br>
+                        জন্ম তারিখঃ ০১.০৬.৭৮
+                        </td>
+                    <td>এসএসসি -২য়-১৯৯৩<br>
+                        এইচএসসি -২য়- ১৯৯৫   <br>         
+                        স্নাতক (পাশ/সম্মান)-২য়-১৯৯৮<br>
+                        স্নাতকোত্তর- ৩.৫৭ - ২০১৭<br>
+                        বিপিএড- ২য়- ২০০৭
+                        </td>
+                    <td>১০.০৭.২০১৪</td>
+                    <td></td>
+                    <td>০১.০৯.২০১৪</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>০৯</td>
+                    <td>নামঃ মোঃ গোলাম মোস্তফা<br>
+                        পদবীঃ সহকারী শিক্ষক (কৃষি)<br>
+                        ইনডেক্সঃ ১০৭৯৬৫১<br>
+                        জন্ম তারিখঃ ০৮.০৫.৭৯
+                        </td>
+                    <td>এসএসসি -১ম-১৯৯৪<br>
+                        এইচএসসি -২য়-১৯৯৭   <br>            
+                        স্নাতক(পাশ/সম্মান)-৩য়-২০০৪<br>
+                        স্নাতকোত্তর- ৩.৩৭ - ২০১৭
+                        </td>
+                    <td>১৫.০৯.২০১৩</td>
+                    <td></td>
+                    <td>০১.১১.২০১৩</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১০</td>
+                    <td>নামঃ মোঃ আলমগীর<br>
+                        পদবীঃ সহকারী শিক্ষক (গ্রন্থাগারিক)<br>
+                        ইনডেক্সঃ ১১০০২৭৬<br>
+                        জন্ম তারিখঃ ১০.১০.৮৭
+                        </td>
+                    <td>দাখিল -৩.২৫-২০০৩<br>
+                        আলিম -৩.৪২- ২০০৫ <br>
+                        স্নাতক (ফাজিল) - ১ম- ২০০৭ <br>
+                        স্নাতকোত্তর (কামিল)-৩.৫৫ - ২০০৯
+                        </td>
+                    <td>১১.০৬.২০১১</td>
+                    <td></td>
+                    <td>০১.১১.২০১৩</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১১</td>
+                    <td>নামঃ মোসাঃ কিসমোতারা খাতুন<br>
+                        পদবীঃ সহকারী শিক্ষক (জীব বিজ্ঞন)<br>
+                        ইনডেক্সঃ ৫৬৮১৬৮৯৯<br>
+                        জন্ম তারিখঃ ১৫.১১.৯২
+                        </td>
+                    <td>এসএসসি -৩.৯৪-২০০৮<br>
+                        এইচএসসি -৪.৫০-২০১০    <br>
+                        স্নাতক (পাশ/সম্মান)-৩.২৪-২০১৪<br>
+                        স্নাতকোত্তর(প্রাণিবিদ্যা)৩.৫৬ - ২০১৫
+                        </td>
+                    <td>২৬.০১.২২</td>
+                    <td></td>
+                    <td>০১.০৩.২০২২</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১২</td>
+                    <td>নামঃ তরুন কুমার মন্ডল <br>
+                        পদবীঃ সহকারী শিক্ষক (ভৌত বিজ্ঞান)<br>
+                        ইনডেক্সঃ ৫৬৮১৫০৪৪<br>
+                        জন্ম তারিখঃ ২৫.০৮.৮৮
+                        </td>
+                    <td>এসএসসি -৩.৯৪-২০০৮<br>
+                        এইচএসসি -৪.৫০-২০১০   <br> 
+                        স্নাতক (পাশ/সম্মান)-৩.২৪-২০১৪<br>
+                        স্নাতকোত্তর(প্রাণিবিদ্যা)৩.৫৬ - ২০১৫
+                        </td>
+                    <td>২৬.০১.২২</td>
+                    <td></td>
+                    <td>০১.০৩.২০২২</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৩</td>
+                    <td>নামঃ মোসাঃ সেতারা বেগম<br>
+                        পদবীঃ সহকারী শিক্ষক (প্রাইমারী শাখা)<br>
+                        ইনডেক্সঃ ২২৪৩১৫<br>
+                        জন্ম তারিখঃ ২০.১১.৬৬
+                        </td>
+                    <td>এসএসসি -৩য়-১৯৮১</td>
+                    <td>০১.০৯.১৯৮১</td>
+                    <td></td>
+                    <td>০১.০৬.১৯৮৫</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৪</td>
+                    <td>নামঃ মোঃ জহরুল ইসলাম<br>
+                        পদবীঃ সহকারী শিক্ষক (প্রাইমারী শাখা)<br>
+                        ইনডেক্সঃ <br>
+                        জন্ম তারিখঃ ২৬.১০.৮৭
+                        </td>
+                    <td>দাখিল -৪.০০-২০০২<br>
+                        এইচএসসি -৩.৫০- ২০০৪    <br>
+                        স্নাতক (পাশ/সম্মান)-২য়-২০০৮<br>
+                        স্নাতকোত্তর- ২য়/২০০৯
+                        </td>
+                    <td>২৭.০২.২০১৮</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৫</td>
+                    <td>নামঃ মোসাঃ নায়েমা পারভীন<br>
+                        পদবীঃ সহকারী শিক্ষক (প্রাইমারী শাখা)<br>
+                        ইনডেক্সঃ <br>
+                        জন্ম তারিখঃ ০১.০৩.৯১
+                        </td>
+                    <td>এসএসসি -২.২৫-২০০৭<br>
+                        এইচএসসি -৪.১০-২০০৯   <br>
+                        স্নাতক (পাশ/সম্মান)- ২য়- ২০১২
+                        </td>
+                    <td>২৭.০২.২০১৮</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৬</td>
+                    <td>নামঃ মোঃ শহিদুল ইসলাম<br>
+                        পদবীঃ সহকারী শিক্ষক (প্রাইমারী শাখা)<br>
+                        ইনডেক্সঃ <br>
+                        জন্ম তারিখঃ ২০.১০.৮৭
+                        </td>
+                    <td>দাখিল -২.৮৩-২০০২<br>
+                        আলিম -২.৭৫- ২০০৪  <br>
+                        স্নাতক (ফাজিল)-১ম-২০০৭<br>
+                        স্নাতকোত্তর(কামিল)-৩.৫৫/২০০৮
+                        </td>
+                    <td>২৭.০২.২০১৮</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৭</td>
+                    <td>নামঃ মোঃ ওমর ফারুক<br>
+                        পদবীঃ অফিস সহকারী <br>
+                        ইনডেক্সঃ ১১৩১৪২৫<br>
+                        জন্ম তারিখঃ ২৫.১২.৯২
+                        </td>
+                    <td>এসএসসি -৩.৬৪-২০১০<br>
+                        এইচএসসি -৪.৩৯- ২০১২  <br>
+                        স্নাতক(পাশ/সম্মান)-২য়-২০১৬
+                        </td>
+                    <td>০৪.১০.২০১৬</td>
+                    <td></td>
+                    <td>০১.১১.২০১৬</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৮</td>
+                    <td>নামঃ মোসাঃ হাবিবা খতুন<br>
+                        পদবীঃ আয়া<br>
+                        ইনডেক্সঃ ৫৬৩৯২২<br>
+                        জন্ম তারিখঃ ০১.০১.৭০
+                        </td>
+                    <td>অষ্টম শ্রেণি - পাশ</td>
+                    <td>২১.১০.১৯৯৮</td>
+                    <td></td>
+                    <td>০১.০৫.২০০২</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>১৯</td>
+                    <td>নামঃ মোঃ হোসেন আলী<br>
+                        পদবীঃ পরি”ছন্নতা কর্মী<br>
+                        ইনডেক্সঃ ১০৩৮৪৬১<br>
+                        জন্ম তারিখঃ ০১.১২.৭৭
+                        </td>
+                    <td>অষ্টম শ্রেণি - পাশ</td>
+                    <td>২৫.০৩.২০০৮</td>
+                    <td></td>
+                    <td>০১.০৫.২০০৯</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>২০</td>
+                    <td>নামঃ মোঃ মিজানুর রহমান<br>
+                        পদবীঃ নিরাপত্তা কর্মী<br>
+                        ইনডেক্সঃ ১১২৮১৫৮<br>
+                        জন্ম তারিখঃ ০১.০৯.৮৭
+                        </td>
+                    <td>অষ্টম শ্রেণি - পাশ</td>
+                    <td>২৪.১১.২০১৫</td>
+                    <td></td>
+                    <td>০১.০৩.২০১৬</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>২১</td>
+                    <td>নামঃ মোঃ সোহেল<br>
+                        পদবীঃ অফিস সহায়ক<br>
+                        ইনডেক্সঃ <br>
+                        জন্ম তারিখঃ ০২/০৮/২০০১
+                        </td>
+                    <td>এসএসসি -৩.৫৯ -২০১৭</td>
+                    <td>২৪.১১.২০১৫</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>২২</td>
+                    <td>নামঃ কামাল উদ্দীন<br>
+                        পদবীঃ নৈশ প্রহরী<br>
+                        ইনডেক্সঃ <br>
+                        জন্ম তারিখঃ ০৫/১১/১৯৯৬
+                        </td>
+                    <td>এসএসসি -৪.১৪ -২০২২</td>
+                    <td>৩০.০৪.২০২৩</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
+      </div>
+
+
+
+
+       <!--Footer-->
+ 
+  
+ <div class="container-fluid mt-4 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>যোগাযোগ</h4>
+          <ul>
+            <li><i class="fa-regular fa-envelope"></i>&nbsp; islampurghs@gmail.com</i></li><br>
+            <li><i class="fa-solid fa-phone-volume"> &nbsp; 01726116729</i></li><br>
+            <li><i class="fa-solid fa-location-dot"></i>&nbsp; বাঠাঁপাড়া,ইসলামপুর,চাঁপাইনবাবগঞ্জ</li><br>
+            <li><i class="fa-brands fa-square-facebook "></i><a href="https://www.facebook.com/islampurghs"> &nbsp;<span>Click Here</span></a></li>
+
+          </ul>
+
+        </div>
+        <div class="col-sm-6">
+          <h4>গুরুত্বপূর্ণ লিংক</h4>
+          <ul class="important-link">
+            <li><a href="https://bangladesh.gov.bd/index.php"> বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+            <li><a href="https://moedu.gov.bd/"> শিক্ষা মন্ত্রণালয়</a></li>
+            <li><a href="https://www.shed.gov.bd/"> মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ</a></li>
+            <li><a href="https://dshe.gov.bd/">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</a> </li>
+            <li><a href="https://rajshahieducationboard.gov.bd/">মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, রাজশাহী</a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+       <!--js file-->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+      window.onscroll = function(){myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+
+      function myFunction(){
+        if(window.pageYOffset>= sticky){
+          navbar.classList.add("sticky");
+        }
+        else{
+          navbar.classList.remove("sticky");
+        }
+      }
+
+    </script>
+
+
+
+</body>
